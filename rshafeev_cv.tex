@@ -6,12 +6,17 @@
 \usepackage[english]{babel}
 \usepackage{url}
 \usepackage{hyperref}
+\usepackage{xcolor}
 
+\makeatletter
+\newcommand*\bigcdot{\mathpalette\bigcdot@{.5}}
+\newcommand*\bigcdot@[2]{\mathbin{\vcenter{\hbox{\scalebox{#2}{$\m@th#1\bullet$}}}}}
+\makeatother
 
 \ecvname{Shafeev, Roman}
 \ecvfootername{Shafeev Roman}
-\ecvaddress{18/2 f.345 European avenue, Kudrovo, Leningrad region, Russia}
-\ecvtelephone[+7 965 078 43 30]{Skype ID: roma.shafeev }
+\ecvaddress{Saint-Petersburg, Russia}
+\ecvtelephone[+7 965 078 43 30]{telegram:  @rshafeev}
 \ecvemail{\url{r.a.shafeev@yandex.com}}
 
 
@@ -30,97 +35,143 @@
 
 \ecvsection{Work experience}
 
-\ecvitem{Date}{March 2018 --July 2019}
-\ecvitem{Occupation or position held}{Product Lead ( Connected Vehicle Cloud ), ARRIVAL LTD}
+% ========== Arrival Leading ========== %
 
+\ecvitem{}{}
+\ecvitem{\textbf{Date}}{\textbf{March 2018 --July 2019 \textcolor{gray}{ / 1 year 5 months} }} 
+\ecvitem{\textbf{Company}}{\textbf{ARRIVAL LTD}}
+\ecvitem{\textbf{Position Held}}{\textbf{Product Lead ( Connected Vehicle Cloud ) }}
+\ecvitem{Roles}{	
+	$\bigcdot$ Team Leading \& Scrum Master
+	
+	$\bigcdot$ Product Roadmap Planning	
 
-\ecvitem{Date}{June 2017 -- March 2018}
-\ecvitem{Occupation or position held}{Product Lead ( Insurance Telematics ), StarLine}
+	$\bigcdot$ Architecture Design
+}
+
+\ecvitem{Key Achievements}{
+	$\bigcdot$ .
+	
+}
+
+\ecvitem{Technical Skills}{
+	$\bigcdot$ .
+	
+}
+
+% ========== Starline Leading ========== %
+\ecvitem{}{}
+\ecvitem{\textbf{Date}}{\textbf{February 2017 -- March 2018 \textcolor{gray}{ / 1 year 2 months} }} 
+\ecvitem{\textbf{Company}}{\textbf{StarLine}}
+\ecvitem{\textbf{Position Held}}{\textbf{Product Lead ( Insurance Telematics) }}
+\ecvitem{Roles}{	
+	$\bigcdot$ Team Leading \& Scrum Master
+	
+	$\bigcdot$ Product Roadmap Planning
+	
+    $\bigcdot$ Technical Integration \& Communication with Telematics Partners
+	
+	$\bigcdot$ Architecture Design
+
+	$\bigcdot$ Python API Backend Developing		
+}
+
+\ecvitem{Key Achievements}{
+	$\bigcdot$ My Team designed \& developed Pub/Sub API for b2b integration with Telematics Providers and Insurance Partners to transfer vehicles telemetry to theirs systems in real time mode.
+	
+	$\bigcdot$ My Team implemented 'driving style assessment' feature to calculate driving style score by selected date-time period in real-time mode.
+	
+	$\bigcdot$  My Team implemented 'insurance-telematics' b2b product to calculate insurance score and crash detection/reconstruction based on raw data of vehicle accelerometer which collected from the vehicle on cloud side.		
+}
+
+\ecvitem{Technical Skills}{
+
+	$\bigcdot$ Development: python3, tornado, sqlalchemy
+	
+}
 
 % ========== Starline Developing ========== %
 \ecvitem{}{}
-\ecvitem{\textbf{Date}}{\textbf{July 2015 -- June 2017 , 2 years}} 
+\ecvitem{\textbf{Date}}{\textbf{July 2015 -- February 2017 \textcolor{gray}{ / 1 year 8 months} }} 
 \ecvitem{\textbf{Company}}{\textbf{StarLine}}
 \ecvitem{\textbf{Position Held}}{\textbf{C++/Python Backend Developer}}
 \ecvitem{Roles}{	
-$\bullet$ C++ Backend Developing
+$\bigcdot$ C++ Backend Developing
 
-$\bullet$ Python API Backend Developing
+$\bigcdot$ Python API Backend Developing
 
-$\bullet$ Technical Design
+$\bigcdot$ Technical Design
 
-$\bullet$ Applied Mathematics Research
+$\bigcdot$ Applied Mathematics Research
 
 }
 
 \ecvitem{Key Achievements}{
-	$\bullet$ designed and implemented  MSA with Decomposition way for Telemetry Monoliths Server using RabbitMQ as Services Messages Bus.
+	$\bigcdot$ designed and implemented  MSA with Decomposition way for Telemetry Monoliths Server using RabbitMQ as Services Messages Bus.
 	
-	$\bullet$ designed and implemented remote communication between client applications(mobile apps, web portal) and connected vehicles through $client \leftrightarrow api \leftrightarrow platform \leftrightarrow vehicle$ on Connected Vehicle Platform side using redis pub/sub channels.
+	$\bigcdot$ designed and implemented remote communication between client applications(mobile apps, web portal) and connected vehicles through $client \leftrightarrow api \leftrightarrow platform \leftrightarrow vehicle$ on Connected Vehicle Platform side using redis pub/sub channels.
 	
-	$\bullet$ developed backend micro-services with horizontal scaling to receive and to collect vehicle`s telemetry of more than 300K connected vehicles.
-
-	$\bullet$ implemented 'insurance-telematics' feature to calculate insurance score based on raw data of vehicle accelerometer which collected from the vehicle on cloud side.
+	$\bigcdot$ developed backend micro-services with horizontal scaling to receive and to collect vehicle`s telemetry of more than 300K connected vehicles.
 	
-	$\bullet$ designed and implemented heuristic algorithm to solve 'anti-star' problem to filter noise and broken track points in real-time.
+	$\bigcdot$ designed and implemented heuristic algorithm to solve 'anti-star' problem to filter noise and broken track points in real-time.
 }
 
 \ecvitem{Technical Skills}{
-$\bullet$ Connected Vehicle Development: c++11, cmake, poco, stl, libevent, protobuf
+$\bigcdot$ Connected Vehicle Development: c++11, cmake, poco, stl, libevent, protobuf
 
-$\bullet$ API Development: python3, tornado, sqlalchemy
+$\bigcdot$ API Development: python3, tornado, sqlalchemy
 
-$\bullet$ Services Communication Bus: rabbitmq (via SimpleAmqpClient for c++ / via pika for python)
+$\bigcdot$ Services Communication Bus: rabbitmq (via SimpleAmqpClient for c++ / via pika for python)
 
-$\bullet$ Databases:  redis (via hiredis), mysql (via mysqlcppconn), oracle (via occi)
+$\bigcdot$ Databases:  redis (via hiredis), mysql (via mysqlcppconn), oracle (via occi)
  
 }
 
 % ========== KhPI Developing ========== %
 \ecvitem{}{}
 \ecvitem{}{}
-\ecvitem{\textbf{Date}}{\textbf{September 2013 -- June 2015 , 1 year 10 months}} 
+\ecvitem{\textbf{Date}}{\textbf{September 2013 -- June 2015 \textcolor{gray}{ / 1 year 10 months} }} 
 \ecvitem{\textbf{Company}}{\textbf{NTU "KhPI", Ukraine}}
 \ecvitem{\textbf{Position Held}}{\textbf{Researcher of the Department of Computer Mathematics and Mathematical Modeling}}
 \ecvitem{Roles}{
-		$\bullet$ Applied Mathematics Research
+		$\bigcdot$ Applied Mathematics Research
 		
-		$\bullet$ Conducting laboratory and practical classes of C++ programming
+		$\bigcdot$ Conducting laboratory and practical classes of C++ programming
 }
 \ecvitem{Key Achievements}{
-		$\bullet$ designed and implemented matlab application which allows to find the best productive supply for each transformer with minimal losses on the  power transformers in Dushanbe (Tajikistan).
+		$\bigcdot$ designed and implemented matlab application which allows to find the best productive supply for each transformer with minimal losses on the  power transformers in Dushanbe (Tajikistan).
 		
-		$\bullet$  developed a vehicle routing java framework that uses specialized metaheuristic algorithms to calculate an optimal solution of the different classes of the static and dynamic vehicle routing problems.
+		$\bigcdot$  developed a vehicle routing java framework that uses specialized metaheuristic algorithms to calculate an optimal solution of the different classes of the static and dynamic vehicle routing problems.
 }
 \ecvitem{Technical Skills}{
-	$\bullet$ Language: C++, Java
+	$\bigcdot$ Language: C++, Java
 	
-	$\bullet$ Math Tools: Matlab
+	$\bigcdot$ Math Tools: Matlab
 }
 
 
 % ========== TUHH ========== %
 \ecvitem{}{}
 \ecvitem{}{}
-\ecvitem{\textbf{Date}}{\textbf{July 2011 -- November 2011 , 5 months}} 
+\ecvitem{\textbf{Date}}{\textbf{July 2011 -- November 2011 \textcolor{gray}{ / 5 months} }} 
 \ecvitem{\textbf{Company}}{\textbf{Hamburg University of Technology-TUHH}}
 \ecvitem{\textbf{Position Held}}{\textbf{Software Developer}}
 \ecvitem{Roles}{
-	$\bullet$ Applied Mathematics Research
+	$\bigcdot$ Applied Mathematics Research
 	
-	$\bullet$ Conducting laboratory and practical classes of C++ programming
+	$\bigcdot$ Conducting laboratory and practical classes of C++ programming
 }
 \ecvitem{Key Achievements}{
-	$\bullet$ built model which follows a rigorous development process framework, where model	validity is ensured by using Supply Chain Operations Reference as theoretical process	framework using Anylogic Modeling Platform. An agent based simulation platform is presented for generic supply chain modeling adding flexibility and configurability over existing models.
+	$\bigcdot$ built model which follows a rigorous development process framework, where model	validity is ensured by using Supply Chain Operations Reference as theoretical process	framework using Anylogic Modeling Platform. An agent based simulation platform is presented for generic supply chain modeling adding flexibility and configurability over existing models.
 	
-	$\bullet$ developed UI-tool which allows to design delivery routes between the points of the delivery chains and export them  in .accdb format to have the ability to use them in Anylogic into supply chain model.
+	$\bigcdot$ developed UI-tool which allows to design delivery routes between the points of the delivery chains and export them  in .accdb format to have the ability to use them in Anylogic into supply chain model.
 }
 
 \ecvitem{Technical Skills}{
 	
-	$\bullet$ Modeling Tools: Anylogic 6.6 
+	$\bigcdot$ Modeling Tools: Anylogic 6.6 
 	
-	$\bullet$ Development: C++, WinAPI/MFC, Visual Studio 2008, OpenStreetMap
+	$\bigcdot$ Development: C++, WinAPI/MFC, Visual Studio 2008, OpenStreetMap
 }
 
 
@@ -137,42 +188,42 @@ $\bullet$ Databases:  redis (via hiredis), mysql (via mysqlcppconn), oracle (via
 
 
 \ecvitem{\large Actual Technical skills and competences}{}
-\ecvitem{ }{$\bullet$ \textbf{Operating System Experiences}}
+\ecvitem{ }{$\bigcdot$ \textbf{Operating System Experiences}}
 \ecvitem{ }{ Linux (debian, ubuntu, centos)}
 
-\ecvitem{ }{$\bullet$ \textbf{Programming Languages}}
+\ecvitem{ }{$\bigcdot$ \textbf{Programming Languages}}
 \ecvitem{ }{ C++ 11+, Python 3, SQL,  PL/pgSQL, Java / Scala(basic level)}
 
-\ecvitem{ }{$\bullet$ \textbf{Database Management Systems}}
+\ecvitem{ }{$\bigcdot$ \textbf{Database Management Systems}}
 \ecvitem{ }{ PostgreSQL, Oracle, Redis, InfluxDB, Cassandra, ClickHouse (basic level)}
 
 
-\ecvitem{ }{$\bullet$ \textbf{Python technologies \& frameworks}}
+\ecvitem{ }{$\bigcdot$ \textbf{Python technologies \& frameworks}}
 \ecvitem{ }{ Tornado, aiohttp, sqlalchemy, WAMP}
 
-\ecvitem{ }{$\bullet$ \textbf{C++ technologies \& frameworks}}
+\ecvitem{ }{$\bigcdot$ \textbf{C++ technologies \& frameworks}}
 \ecvitem{ }{ cmake, STL, libevent, nghhtp2}
 
 
-\ecvitem{ }{$\bullet$ \textbf{Data Streaming \& Services Bus}}
+\ecvitem{ }{$\bigcdot$ \textbf{Data Streaming \& Services Bus}}
 \ecvitem{ }{ RabbitMQ, Apache Kafka, Temporal.io }
 
-\ecvitem{ }{$\bullet$ \textbf{Orchestration \& Containerization}}
+\ecvitem{ }{$\bigcdot$ \textbf{Orchestration \& Containerization}}
 \ecvitem{ }{ k8s, docker compose, docker swarm }
 
-\ecvitem{ }{$\bullet$ \textbf{Cloud Computing Services}}
+\ecvitem{ }{$\bigcdot$ \textbf{Cloud Computing Services}}
 \ecvitem{ }{ GCP k8s, Google Pub/Sub}
 
-\ecvitem{ }{$\bullet$ \textbf{Infra \& CI tools}}
+\ecvitem{ }{$\bigcdot$ \textbf{Infra \& CI tools}}
 \ecvitem{ }{ Jenkins CI, Gitlab CI, Ansible, Terraform}
 
-\ecvitem{ }{$\bullet$ \textbf{Development tools}}
+\ecvitem{ }{$\bigcdot$ \textbf{Development tools}}
 \ecvitem{ }{ PyCharm, CLion, Intellij Idea}
 
-\ecvitem{ }{$\bullet$ \textbf{Version Control Systems}}
+\ecvitem{ }{$\bigcdot$ \textbf{Version Control Systems}}
 \ecvitem{ }{ Git}
 
-\ecvitem{ }{$\bullet$ \textbf{Other skills}}
+\ecvitem{ }{$\bigcdot$ \textbf{Other skills}}
 \ecvitem{ }{ Mathematics: MatLab, R Studio}
 \ecvitem{ }{ Simulation: Rational Rose, Anylogic}
 
