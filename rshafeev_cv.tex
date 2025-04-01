@@ -23,7 +23,7 @@
 \ecvnationality{Russian}
 \ecvdateofbirth{Feb 14 1990}
 \ecvgender{male}
-\ecvpicture[width=4cm]{photo2.jpg}
+\ecvpicture[width=4cm]{photo3.jpg}
 \ecvfootnote{For more information call me}
 
 \begin{document}
@@ -35,29 +35,67 @@
 
 \ecvsection{Work experience}
 
+% ========== BUREAU 1440 ========= %
+
+\ecvitem{}{}
+\ecvitem{\textbf{Date}}{\textbf{January 2024 -- December 2024  \textcolor{gray}{ 1 year} }} 
+\ecvitem{\textbf{Company}}{\textbf{BUREAU 1440}}
+\ecvitem{\textbf{Position Held}}{\textbf{Chief Solution Architect }}
+\ecvitem{Roles}{	
+	$\bigcdot$ Architecture Design
+	
+	$\bigcdot$ Solution Prototypes Building
+	
+	$\bigcdot$ Iterative architecture design of Satellite Internet Constellation Network Management System
+}
+
+\ecvitem{Key Achievements}{
+	
+	$\bigcdot$  made an HLD for a Unified Space Communications Network Management System based on two previously developed systems: network management system of a ground segment communications and a satellite flight management system.  The purpose of this unification is to eliminate duplication of software components and to build a solution for controlling satellite`s devices, ground and gateway stations of the space system on all available communication lines using unified principles. The unified management system allows to remote configuration, to execute control actions (for example, impulses for satellite maneuvering), to update satellite software, to collect telemetry, metrics, logs, and to detect faults in automatic mode to promptly recover the operability of the network element or satellite.
+	
+	$\bigcdot$ designed a new Earth-Satellite communication protocol for a management system for the purpose of managing and monitoring the state of satellite devices in an IPv6 network under conditions of high data losses at the physical level.
+	
+	$\bigcdot$ designed a workflow orchestration subsystem that helps operational operators coordinate work (configuration, software updates, maneuvering, etc.) for their mutual consistency in a semi-automatic mode.
+	
+	$\bigcdot$ designed a solution for automating the process of refining and updating the forecast of the spacecraft's trajectory without the participation of the operation operator. Previously, the operation operator had to recalculate and update the movement forecast for each spacecraft twice a day by conducting a visual analysis of the operation of the calculation algorithms in manual mode.
+	
+	$\bigcdot$ organized the migration of the management system to k8s.
+	
+	$\bigcdot$ implemented the Architecture as Code approach and organized the development process using Architecture Decision Records.
+}
+
 % ========== MTS AI ========= %
 
 \ecvitem{}{}
-\ecvitem{\textbf{Date}}{\textbf{June 2022 -- now \textcolor{gray}{ } }} 
+\ecvitem{\textbf{Date}}{\textbf{June 2022 -- December 2024  \textcolor{gray}{ 1 year 7 months } }} 
 \ecvitem{\textbf{Company}}{\textbf{MTS AI}}
-\ecvitem{\textbf{Position Held}}{\textbf{Solution Architect }}
+\ecvitem{\textbf{Position Held}}{\textbf{Chief Solution Architect }}
 \ecvitem{Roles}{	
 	$\bigcdot$ Architecture Design
 	
 	$\bigcdot$ Solution Prototypes Building
 
-	$\bigcdot$ iterative design architecture of the \href{https://mts.ai/ru/product/audiogram/}{Audiogram product} for speech synthesis and recognition (TTS/ASR) and the \href{https://mts.ai/ru/product/nlp-platform/}{Natural Language Processing Platform} to build intelligent virtual assistants.	
+	$\bigcdot$ Iterative architecture design of the \href{https://mts.ai/ru/product/audiogram/}{Audiogram product} for speech synthesis and recognition (TTS/ASR) and the \href{https://mts.ai/ru/product/nlp-platform/}{Natural Language Processing Platform} to build intelligent virtual assistants.	
 }
 
 \ecvitem{Key Achievements}{
 
-	$\bigcdot$ designed a technical solution for asynchronous retransmission of chatbot communication dialogues with the user into the speech analytics module in the NLP Platform product
+	$\bigcdot$ designed a solution for collecting and processing dialogues of communication between chatbots and users in the NLP Analytics system
 	
-	$\bigcdot$ implemented observability distributed tracing of software components of the Audiogram product
+	$\bigcdot$ designed Identity Access Management with an authorization model based on json-policies
 	
-	$\bigcdot$ designed a solution for horizontal scaling of API components and agents responsible for client communication with triton servers in the Audiogram product
+	$\bigcdot$ designed a solution for identifying and verifying a speaker by his voice
 	
-	$\bigcdot$ designed the transition from the SOA to the MSA model in the Audiogram product. 
+	$\bigcdot$ designed a solution for determining the age group of a speaker during speech recognition from an audio stream
+	
+	$\bigcdot$ designed an Audio Archive for recording streaming audio for further use in "Speech Analytics" and for further training of ML models
+	
+	$\bigcdot$ designed a solution for horizontal scaling of Audiogram product services; organized the migration of the product to k8s
+	
+	$\bigcdot$ completed the transition from SOA to MSA model in the Audiogram product
+	
+	$\bigcdot$ implemented such engineering practices as 19-apps factors, observability, structured logging, distributed tracing of software components of the Audiogram product
+	
 }
 
 \ecvitem{Technical Skills}{
@@ -65,9 +103,9 @@
 	
 	$\bigcdot$ Services Bus: Apache Kafka
 	
-	$\bigcdot$ Databases: Postgresql, ClickHouse, Redis
+	$\bigcdot$ Databases: Postgresql, ClickHouse, OpenSearch, Redis, Milvus
 	
-	$\bigcdot$ Machine Learning: triton server, rasa
+	$\bigcdot$ Machine Learning:Triton Server, Rasa
 	
 }
 
@@ -76,22 +114,24 @@
 \ecvitem{}{}
 \ecvitem{\textbf{Date}}{\textbf{February 2021 -- February 2022 \textcolor{gray}{ / 1 year 1 month} }} 
 \ecvitem{\textbf{Company}}{\textbf{RingCentral}}
-\ecvitem{\textbf{Position Held}}{\textbf{Solution Architect ( Analytics ) }}
+\ecvitem{\textbf{Position Held}}{\textbf{Solution Architect }}
 \ecvitem{Roles}{	
 	$\bigcdot$ Architecture Design
 	
 	$\bigcdot$ Solution Prototypes Building
 	
+	$\bigcdot$ Iterative architecture design of the RingCentral Analytics Product
+	
 }
 
 \ecvitem{Key Achievements}{
-	$\bigcdot$ designed technical solution to build `Quality as Service` of Customer-Facing Analytics for webinars with 10k+ attendees. The Analytics System consumes telemetry of RingCentral video meetings from RingCentral Data Points and from client applications (e.g. HLS Players) to builds scoring analytics of meeting quality to help customer admins determine the cause of failure of media streaming.
+	$\bigcdot$ designed a solution to build "Quality as a Service" customer analytics for webinars with over 10K+ online attendees. The Analytics System uses video conference telemetry from RingCentral data points and from client applications to build quality score to determine the cause of failure and/or poor quality of media streaming for video conference participants.
 	
 	$\bigcdot$ designed technical solution to build `Webinar Marketing` Analytics. The Analytics System collects any actions of the attendee starting from the moment of registration in the webinar and ending with the completion of his participation in the webinar to build funnel trends for Marketers.
 	
-	$\bigcdot$ designed technical solution and made prototype to async generation and download Analytics Reports from RingCentral Analytics Portal.
+	$\bigcdot$ designed technical solution to async generate and download Analytics Reports from RingCentral Analytics Portal.
 	
-	$\bigcdot$ designed technical solution to reorganize RingCentral Analytics System to ensure GDPR and Schrems II Compliance and build regional clusters for EU and APAC.
+	$\bigcdot$ designed technical solution to reorganize RingCentral Analytics System to ensure GDPR and Schrems II Compliance and built regional clusters for EU and APAC.
 
 	$\bigcdot$ made an audit of architectural documentation and actualized system and functional specifications of RingCentral Analytics System; built py-tool which generate draw.io interactive architectural diagrams from configuration files and applications artifacts and publish them into Confluence using Confluence API and integrated him to GitLab CI. 
 }
@@ -124,11 +164,11 @@
 }
 
 \ecvitem{Key Achievements}{
-	$\bigcdot$ built Development Process based on Self Agile methodology and increased responsibility for team actions,  outcomes and delivers on commitments. We have reached average Team Work Efficiency of more than 98%.
+	$\bigcdot$ built Development Process based on Self Agile methodology and increased responsibility for team actions,  outcomes and delivers on commitments. 
 	
-	$\bigcdot$ My team migrated legacy Kernel Telephony Service which has a lot of win-specific code (winapi, com objects, mfc, etc.) from Win to Linux Platform. 
+	$\bigcdot$ migrated legacy Kernel Telephony Service (millions code lines) which has a lot of win-specific code (winapi, com objects, mfc, etc.) from Win to Linux Platform. 
 	
-	$\bigcdot$ My team refactored legacy Kernel Telephony Service using EDA architecture concepts to simplify the internal architecture of the service and migrate to an asynchronous model of communication between isolated service components.
+	$\bigcdot$ refactored legacy Kernel Telephony Service using EDA architecture concepts to simplify the internal architecture of the service and migrate to an asynchronous model of communication between isolated service components.
 	
 }
 
@@ -158,14 +198,15 @@
 }
 
 \ecvitem{Key Achievements}{
-	$\bigcdot$ formed a team with 10 members (2 c++ backend developers, 2 py developers, 2 frontend developers, devops, ux designer, 2 QA eng.)
-	$\bigcdot$ My Team built the Connected Vehicle Cloud which is  based on MSA Architectural concepts and launched new innovative SaaS solutions for the automotive world: Remote Access and Remote Control of Vehicle CAN/ETH Buses. It became possible to receive from CAN and Automotive Ethernet Buses any sensors data of the vehicle in real-time and visualize them in Cloud Engineering Portal. 
+	$\bigcdot$ formed a product team with 12 members
 	
-	$\bigcdot$ My Team built SaaS Remote Diagnostics Tool to help of  support engineers to determine the cause of SW/HW failures as soon as possible when they have remote access to the vehicle only.
+	$\bigcdot$ built the Connected Vehicle Cloud for Arrival vehicles, allowing to collect, process and visualize any vehicle sensor data from CAN/ETH buses in real time
 	
-	$\bigcdot$ My Team built the OTA Update Service to upgrade  applications and firmware of vehicle i/o modules, HMI and linux-based automotive systems.  	
+	$\bigcdot$ released a Remote Diagnostics product that allows service engineers to quickly determine the cause of software/hardware failures in an electric vehicle when they only have remote access to the vehicle
 	
-	$\bigcdot$ My Team designed and implemented a new automotive protocol for $vehicle \leftrightarrow cloud$ communications. The protocol has the following properties: multi-streaming per single tcp connection, streams prioritization, datagrams compression, data tls encryption, guarantee delivery, saving traffic when transmitting telemetry (only telemetry signal changes are transmitted). 
+	$\bigcdot$ released the OTA-Update product for remote updating of applications and firmware of automotive IO modules, HMI and automotive systems based on Linux  	
+	
+	$\bigcdot$ designed and implemented a new automotive protocol for $vehicle \leftrightarrow cloud$ communications. The protocol has the following properties: multi-streaming per single tcp connection, streams prioritization, datagrams compression, data tls encryption, guarantee delivery, saving traffic when transmitting telemetry (only telemetry signal changes are transmitted). 
 }
 
 \ecvitem{Technical Skills}{
@@ -201,11 +242,11 @@
 }
 
 \ecvitem{Key Achievements}{
-	$\bigcdot$ My Team designed \& developed Pub/Sub API for b2b integration with Telematics Providers and Insurance Partners to transfer vehicles telemetry to their systems in real-time mode.
+	$\bigcdot$ designed \& developed Pub/Sub API for b2b integration with Telematics Providers and Insurance Partners to transfer vehicles telemetry to their systems in real-time mode.
 
-	$\bigcdot$ My Team implemented 'the driving style assessment' feature to calculate driving style score by a selected date-time period in real-time mode.
+	$\bigcdot$ implemented 'the driving style assessment' feature to calculate driving style score by a selected date-time period in real-time mode.
 	
-	$\bigcdot$  My Team implemented the 'insurance telematics' b2b product to calculate insurance score and crash detection/reconstruction based on raw data of vehicle accelerometer which collected from the vehicle on the cloud side.		
+	$\bigcdot$  implemented the 'insurance telematics' b2b product to calculate insurance score and crash detection/reconstruction based on raw data of vehicle accelerometer which collected from the vehicle on the cloud side.		
 }
 
 \ecvitem{Technical Skills}{
